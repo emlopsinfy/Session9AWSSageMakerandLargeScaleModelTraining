@@ -1,0 +1,14 @@
+import sagemaker
+from sagemaker.local import LocalSession
+
+sagemaker_session = sagemaker.Session()
+bucket = sagemaker_session.default_bucket()
+prefix = "sagemaker/Demo-pytorch-mnist"
+
+role = sagemaker.get_execution_role()
+
+pip install torchvision==0.5.0 --no-cache-dir
+
+from torchvision import datasets, transforms
+
+datasets.MNIST("data",download=True, transform=tranforms.Compose([tranforms.ToTensor(),tranforms.Normalize((0.1307,),(0.3081,))]),)
