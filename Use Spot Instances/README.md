@@ -1,3 +1,7 @@
+https://github.com/aws-samples/amazon-sagemaker-managed-spot-training/blob/main/pytorch_managed_spot_training_checkpointing/pytorch_managed_spot_training_checkpointing.ipynb
+
+
+
 Every time, we run training on SageMaker, it creates training job for us.
 
 from sagemaker.pytorch import PyTorch
