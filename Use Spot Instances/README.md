@@ -2,6 +2,10 @@ https://github.com/aws-samples/amazon-sagemaker-managed-spot-training/blob/main/
 
 
 
+https://www.youtube.com/watch?v=0ID6AM60m4A
+
+
+
 Every time, we run training on SageMaker, it creates training job for us.
 
 from sagemaker.pytorch import PyTorch
